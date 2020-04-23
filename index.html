@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+<title id="title">Superhero Application</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>So you want to be a superhero?</h1><br>
+<p id="description">Please fill out the form below to determine if you're qualified.</p><br>
+<div class="container">
+<form id="survey-form">
+<div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+    type="text"
+    name="name"
+    id="name"
+    class="form-control"
+    placeholder="Enter your name"
+    required
+    />
+</div>
+<div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input
+    type="text"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="Enter your email address"
+    required
+    />
+</div>
+<div class="form-group">
+  <label id="age-label" for="age">Age (optional)</label>
+  <input
+    type="text"
+    name="age"
+    id="age"
+    class="form-control"
+    placeholder="Enter your age"
+    min="18"
+    max="200"
+    />
+    </div>
+<div class="form-group">
+    <p>Which country are you from?</p>
+    <select id="dropdown" name="country" class="form-control" required>
+        <option disabled selected value>Select country</option>
+        <option value="usa">USA</option>
+        <option value="russia">Russia</option>
+        <option value="china">China</option>
+        <option value="mexico">Mexico</option>
+        <option value="belguim">Belguim</option>
+        <option value="other">Some other country no one cares about</option>
+    </select>
+</div>
+
+<div class="form-group" id="superpower">
+    <p>What are your superpowers?</p>
+    <label> <input
+        name="superpower"
+        value="flight"
+        type="radio"
+        class="input-radio"
+    />Flight</label>
+    <label> <input
+        name="superpower"
+        value="strength"
+        type="radio"
+        class="input-radio"
+    />Superstrength</label>
+    <label> <input
+        name="superpower"
+        value="heat-vision"
+        type="radio"
+        class="input-radio"
+    />Heat Vision</label>
+    <label> <input
+        name="superpower"
+        value="immortal"
+        type="radio"
+        class="input-radio"
+    />Immortal</label>
+    <label> <input
+        name="superpower"
+        value="fire"
+        type="radio"
+        class="input-radio"
+    />Fireballs</label>
+    <label> <input
+        name="superpower"
+        value="invisible"
+        type="radio"
+        class="input-radio"
+    />Invisible</label>
+    <label> <input
+        name="superpower"
+        value="size"
+        type="radio"
+        class="input-radio"
+    />Shrinkable</label>
+</div>
+
+<div class="form-group">
+    <p>What are your weakness(es)?</p>
+    <label> <input
+        name="weakness"
+        value="green-rocks"
+        type="checkbox"
+        class="input-checkbox"
+    />Green rocks</label>
+    <label> <input
+        name="weakness"
+        value="water"
+        type="checkbox"
+        class="input-checkbox"
+    />Water</label>
+    <label> <input
+        name="weakness"
+        value="fire"
+        type="checkbox"
+        class="input-checkbox"
+    />Fire</label>
+    <label> <input
+        name="weakness"
+        value="onions"
+        type="checkbox"
+        class="input-checkbox"
+    />Onions</label>
+    <label> <input
+        name="weakness"
+        value="peanuts"
+        type="checkbox"
+        class="input-checkbox"
+    />Peanuts</label>
+    <label> <input
+        name="weakness"
+        value="ladies"
+        type="checkbox"
+        class="input-checkbox"
+    />The ladies</label>
+    <label> <input
+        name="weakness"
+        value="lint"
+        type="checkbox"
+        class="input-checkbox"
+    />Belly Button Lint</label>
+</div>
+
+<div class="form-group">
+    <p>What's your origins?</p>
+    <label> <input
+        name="origin"
+        value="dead-parents"
+        type="checkbox"
+        class="input-checkbox"
+    />One or more parents dead</label>
+    <label> <input
+        name="origin"
+        value="lab-accident"
+        type="checkbox"
+        class="input-checkbox"
+    />An accident in a laboratory</label>
+    <label> <input
+        name="origin"
+        value="exposure"
+        type="checkbox"
+        class="input-checkbox"
+    />Exposure to radiation or chemicals</label>
+    <label> <input
+        name="origin"
+        value="overdose"
+        type="checkbox"
+        class="input-checkbox"
+    />Drug overdose</label>
+    <label> <input
+        name="origin"
+        value="trauma"
+        type="checkbox"
+        class="input-checkbox"
+    />Psycological trauma</label>
+    <label> <input
+        name="origin"
+        value="government-project"
+        type="checkbox"
+        class="input-checkbox"
+    />Participated in government experiment (willingly or unwillingly)</label>
+    
+
+</div>
+
+<div class="form-group">
+<p>How would you help people with your superpowers?</p>
+<textarea id="comments"
+    class="input-textarea"
+    name="comments"
+    placeholder="Ex: save kittens, stop bad guys, solve global warming">
+</textarea>
+</div>
+
+<div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+</form>
+</div>
+</body>
